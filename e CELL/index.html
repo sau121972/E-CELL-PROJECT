@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Career Guidance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Career Guidance</h1>
+        <p>Helping you make informed career decisions.</p>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Start Your Journey</h2>
+            <p>Use the tools below to explore careers and figure out what’s best for you.</p>
+        </section>
+
+        <section id="filter">
+            <h2>Filter Career Suggestions</h2>
+            <form id="filterForm">
+                <input type="text" id="search" placeholder="Search for a career..." />
+
+                <label for="industry">Choose Industry:</label>
+                <select id="industry">
+                    <option value="all">All Industries</option>
+                    <option value="tech">Technology</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="business">Business</option>
+                    <option value="creative">Creative</option>
+                </select>
+
+                <label for="skills">Skills Required:</label>
+                <select id="skills">
+                    <option value="all">All Skills</option>
+                    <option value="technical">Technical</option>
+                    <option value="creative">Creative</option>
+                    <option value="communication">Communication</option>
+                </select>
+
+                <label for="environment">Work Environment:</label>
+                <select id="environment">
+                    <option value="all">All Environments</option>
+                    <option value="office">Office</option>
+                    <option value="remote">Remote</option>
+                    <option value="field">Field</option>
+                </select>
+
+                <label for="salary">Salary Range:</label>
+                <select id="salary">
+                    <option value="all">All Salary Ranges</option>
+                    <option value="low">Under $50K</option>
+                    <option value="medium">$50K - $100K</option>
+                    <option value="high">Above $100K</option>
+                </select>
+
+                <label for="experience">Experience Level:</label>
+                <select id="experience">
+                    <option value="all">All Levels</option>
+                    <option value="entry">Entry Level</option>
+                    <option value="mid">Mid Level</option>
+                    <option value="senior">Senior Level</option>
+                </select>
+
+                <button type="submit">Apply Filters</button>
+                <button type="button" id="clearFilters">Clear Filters</button>
+            </form>
+        </section>
+
+        <section id="suggestions">
+            <h2>Suggested Careers</h2>
+            <div id="careerList">
+                <div class="loader"></div> <!-- Loading animation -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Career Guidance. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
